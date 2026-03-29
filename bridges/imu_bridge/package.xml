@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>imu_bridge</name>
+  <version>0.1.0</version>
+  <description>Bridge px4_msgs/SensorCombined to sensor_msgs/Imu for OpenVINS.</description>
+  <maintainer email="he@local">he</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <depend>rclpy</depend>
+  <depend>px4_msgs</depend>
+  <depend>sensor_msgs</depend>
+
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

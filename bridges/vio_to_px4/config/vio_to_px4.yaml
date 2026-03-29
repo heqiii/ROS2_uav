@@ -1,0 +1,7 @@
+vio_to_px4_node:
+  ros__parameters:
+    input_topic: /ov_msckf/odomimu
+    output_topic: /fmu/in/vehicle_visual_odometry
+    quality: 100
+    reset_counter: 0
+    use_ros_time: true

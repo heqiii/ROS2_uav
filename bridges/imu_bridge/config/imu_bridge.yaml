@@ -1,0 +1,9 @@
+imu_bridge_node:
+  ros__parameters:
+    input_topic: /fmu/out/sensor_combined
+    output_topic: /imu0
+    frame_id: imu_link
+    convert_frd_to_flu: true
+    use_ros_time: true
+    gyro_covariance_diag: [0.001, 0.001, 0.001]
+    accel_covariance_diag: [0.004, 0.004, 0.004]

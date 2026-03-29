@@ -1,0 +1,10 @@
+build/
+install/
+log/
+**/__pycache__/
+*.pyc
+*.pyo
+*.swp
+*:Zone.Identifier
+*.tmp
+*.bak
