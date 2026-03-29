@@ -91,3 +91,8 @@ ros2 topic echo /fmu/in/vehicle_visual_odometry --once
 不要做：
 - 修改 WSL-A 的 Gazebo/SDF
 - 在本目录直接手工修改 install 产物
+
+## 当前快照状态（2026-03-29）
+- 本文档已与 `ros2_uav/openvins/subagent_openvins.md` 同步。
+- `imu_bridge` 与 `vio_to_px4` 已实现，当前以 `px4_mono` 配置为主线联调。
+- 关联仓库已推送：`heqiii/ROS2_uav`（`main` 与 `feat/bootstrap-ros2-uav`）。

@@ -56,3 +56,7 @@ ros2 topic echo /fmu/out/vehicle_status_v1 --once
 不要做：
 - 修改 PX4 SITL 世界或 SDF（应在 WSL-A）
 - 直接改飞控参数（应在 QGC/PX4 流程中）
+
+## 当前快照状态（2026-03-29）
+- 本文档已与 `ros2_uav/px4_offboard/subagent_px4_offboard.md` 同步。
+- 关联仓库已推送：`heqiii/ROS2_uav`（`main` 与 `feat/bootstrap-ros2-uav`）。

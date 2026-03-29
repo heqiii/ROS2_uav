@@ -266,3 +266,20 @@ gz Harmonic 相机默认发布 RGB8，OpenVINS 期望 mono8 或 BGR8。需要在
   - `open_vins` 本地补丁快照与依赖安装脚本
 
 > 说明：若远程 `ROS2_uav` 已创建但未配置到本地仓库，请在 `ros2_uav` 仓库中补充 `origin` 后推送当前分支。
+
+---
+
+## 状态修订（2026-03-29）
+
+本节用于覆盖前文中已经过时的进度描述。
+
+- `imu_bridge`：已实现并可运行，代码位于 `~/ros2_ws/src/imu_bridge/imu_bridge/imu_bridge_node.py`。
+- `vio_to_px4`：已实现并可运行，代码位于 `~/ros2_ws/src/vio_to_px4/vio_to_px4/vio_to_px4_node.py`。
+- OpenVINS 当前优先使用单目配置：`~/ros2_ws/src/open_vins/config/px4_mono/estimator_config.yaml`。
+- 聚合仓库 `ROS2_uav` 已完成远程推送，远程分支：
+  - `main`
+  - `feat/bootstrap-ros2-uav`
+- 目录角色说明：
+  - `~/ros2_ws`：开发与运行工作区（含构建产物，面向联调）
+  - `~/ros2_uav`：发布/备份仓库（面向版本管理与迭代）
+
