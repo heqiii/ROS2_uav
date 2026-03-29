@@ -249,3 +249,20 @@ gz Harmonic 相机默认发布 RGB8，OpenVINS 期望 mono8 或 BGR8。需要在
 - PX4 SDF 模型文件——在 WSL-A 中
 - Gazebo 世界编辑——在 WSL-A 中
 - QGroundControl 操作或飞控参数调整
+
+---
+
+## ROS2_uav 仓库状态（2026-03-29）
+
+- 本地聚合仓库路径：`/home/he/ros2_uav`
+- 当前分支：`feat/bootstrap-ros2-uav`
+- 已完成本地提交：
+  - `init: ros2_uav backup snapshot`
+  - `docs: add git backup/upload plan`
+- 已纳入备份的核心内容：
+  - `px4_offboard` 脚本与子 agent 文档
+  - `openvins` 规划文档与子 agent 文档
+  - `imu_bridge`、`vio_to_px4` 源码包
+  - `open_vins` 本地补丁快照与依赖安装脚本
+
+> 说明：若远程 `ROS2_uav` 已创建但未配置到本地仓库，请在 `ros2_uav` 仓库中补充 `origin` 后推送当前分支。
